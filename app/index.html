@@ -3,16 +3,39 @@
   <head>
     <meta charset="utf-8">
     <title>.Hello{}</title>
+    <meta name="author" content="Patrick Funom Tunga-Lergo">
+    <meta name="author" content="Rosler Oriol">
+    <meta name="description" content=".Hello{} Websites">
+    <meta name="keywords" content="Patrick, Funom, Tunga-Lergo, Rosler, Oriol, website, dothello, .hello, web design">
     <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.min.css">
-
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="../bower_components/animate.css/animate.min.css">
   </head>
-  <body>
-    <h1>Hello</h1>
-    <button type="button" class="btn btn-primary" name="button">ck</button>
-    <script src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script src="../bower_components/angular/angular.js"></script>
-    <script src="../bower_components/animate.css/animate.css"></script>
+  <body ng-app="dothello">
+    <div ng-view=""></div>
 
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
+     <script>
+       !function(A,n,g,u,l,a,r){A.GoogleAnalyticsObject=l,A[l]=A[l]||function(){
+       (A[l].q=A[l].q||[]).push(arguments)},A[l].l=+new Date,a=n.createElement(g),
+       r=n.getElementsByTagName(g)[0],a.src=u,r.parentNode.insertBefore(a,r)
+       }(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+       ga('create', 'UA-XXXXX-X');
+       ga('send', 'pageview');
+    </script>
+
+    <!-- bower:js -->
+    <!-- <script src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script> -->
+    <script src="../bower_components/angular/angular.js"></script>
+    <script src="../bower_components/angular-resource/angular-resource.js"></script>
+    <script src="../bower_components/angular-route/angular-route.js"></script>
+    <script src="../bower_components/angular-touch/angular-touch.js"></script>
+    <!-- endbower -->
+    <!-- endbower -->
+
+    <!-- app builds -->
+    <script src="scripts/app.js"></script>
+    <!-- endbuild -->
   </body>
 </html>
